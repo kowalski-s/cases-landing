@@ -10,12 +10,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- SVG Icons -->
+    <div style="display: none;">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+              <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+        </svg>
+    </div>
+    
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-content">
                 <a href="#" class="logo">
-                    <span class="logo-icon">📚</span>
+                    <div class="logo-icon-wrapper">
+                        <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="currentColor" d="M19 2H9c-1.1 0-2 .9-2 2v5.5h2V4h10v16h-5v2h5c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+                            <path fill="currentColor" d="M13 13.5V22l-4-2-4 2v-8.5C5 11.57 6.57 10 8.5 10s3.5 1.57 3.5 3.5z"/>
+                        </svg>
+                    </div>
                     <span class="logo-text">EduPlatform</span>
                 </a>
                 <ul class="nav-menu" id="navMenu">
@@ -46,7 +65,11 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <span class="badge-icon">✨</span>
+                    <div class="badge-icon-wrapper">
+                        <svg class="badge-icon" viewBox="0 0 24 24" width="14" height="14">
+                            <path fill="currentColor" d="M12 0l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z"/>
+                        </svg>
+                    </div>
                     <span>MVP готов к демонстрации</span>
                 </div>
                 <h1 class="hero-title">
@@ -100,7 +123,10 @@
                 </div>
                 
                 <div class="floating-card card-2">
-                    <div class="notification-icon">🔔</div>
+                    <svg class="notification-icon" viewBox="0 0 24 24" width="32" height="32">
+                        <path fill="url(#iconGradient)" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path fill="url(#iconGradient)" d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
                     <div class="notification-content">
                         <div class="notification-title"></div>
                         <div class="notification-text"></div>
@@ -140,7 +166,15 @@
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">📅</div>
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24" width="32" height="32">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                            <rect x="7" y="14" width="3" height="3" fill="currentColor"/>
+                        </svg>
+                    </div>
                     <h3 class="feature-title">Умное расписание</h3>
                     <p class="feature-description">
                         Планирование уроков с учетом загруженности преподавателей. 
@@ -154,7 +188,14 @@
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">📝</div>
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="9" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="9" y1="17" x2="15" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3 class="feature-title">Домашние задания</h3>
                     <p class="feature-description">
                         Полный цикл работы с ДЗ: создание, отправка с файлами, 
@@ -169,7 +210,12 @@
                 
                 <div class="feature-card featured">
                     <div class="feature-badge">Ключевая фича</div>
-                    <div class="feature-icon">🔔</div>
+                    <div class="feature-icon-wrapper featured-icon">
+                        <svg class="feature-icon" viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="currentColor" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path fill="currentColor" d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
                     <h3 class="feature-title">Real-time уведомления</h3>
                     <p class="feature-description">
                         Мгновенные уведомления через Supabase Realtime. 
@@ -183,7 +229,13 @@
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">📊</div>
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24" width="32" height="32">
+                            <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
                     <h3 class="feature-title">Аналитика учеников</h3>
                     <p class="feature-description">
                         Детальные метрики успеваемости: прогресс по урокам, 
@@ -197,7 +249,13 @@
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">👨‍🏫</div>
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="16,11 19,8 22,11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <h3 class="feature-title">Кабинет преподавателя</h3>
                     <p class="feature-description">
                         Аналитика нагрузки, график оценок, статистика по ученикам 
@@ -211,7 +269,12 @@
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon" viewBox="0 0 24 24" width="32" height="32">
+                            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
                     <h3 class="feature-title">Админ-панель / CRM</h3>
                     <p class="feature-description">
                         Централизованное управление: ученики, преподаватели, 
@@ -241,15 +304,32 @@
             
             <div class="roles-tabs">
                 <button class="role-tab active" data-role="student">
-                    <span class="role-icon">🎓</span>
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="url(#iconGradient)" d="M22 10l-10-5-10 5 10 5z"/>
+                            <path fill="url(#iconGradient)" d="M6 13.26V16c0 2.21 2.69 4 6 4s6-1.79 6-4v-2.74L12 15z"/>
+                        </svg>
+                    </div>
                     <span>Ученик</span>
                 </button>
                 <button class="role-tab" data-role="teacher">
-                    <span class="role-icon">👨‍🏫</span>
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="url(#iconGradient)" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4" fill="none" stroke="url(#iconGradient)" stroke-width="2"/>
+                            <polyline points="16,11 19,8 22,11" fill="none" stroke="url(#iconGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                     <span>Преподаватель</span>
                 </button>
                 <button class="role-tab" data-role="admin">
-                    <span class="role-icon">👑</span>
+                    <div class="role-icon">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="url(#iconGradient)" d="M12 2l2 6 6-2-3 7h-10l-3-7 6 2z"/>
+                            <rect x="4" y="13" width="16" height="2" fill="url(#iconGradient)"/>
+                            <path fill="url(#iconGradient)" d="M5 18h14v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/>
+                        </svg>
+                    </div>
                     <span>Администратор</span>
                 </button>
             </div>
@@ -267,7 +347,13 @@
                             
                             <div class="role-features">
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">📈</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Дашборд с метриками</h4>
                                         <p>Уроки всего/осталось/выполнено, прогресс в процентах</p>
@@ -275,7 +361,14 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">📝</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                            <polyline points="14,2 14,8 20,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <line x1="9" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="9" y1="17" x2="15" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Управление заданиями</h4>
                                         <p>Фильтры, загрузка решений, отслеживание статусов</p>
@@ -283,7 +376,11 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">📁</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Материалы и вложения</h4>
                                         <p>Скачивание материалов, повторная отправка работ</p>
@@ -291,7 +388,13 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">⏱️</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <circle cx="12" cy="5" r="3" fill="currentColor"/>
+                                            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                                            <circle cx="12" cy="19" r="3" fill="currentColor"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Активность и оценки</h4>
                                         <p>Таймлайн последних активностей и полученных оценок</p>
@@ -340,7 +443,13 @@
                             
                             <div class="role-features">
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">📊</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Аналитика и нагрузка</h4>
                                         <p>Проведенные/запланированные уроки, задания, средняя оценка</p>
@@ -348,7 +457,11 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">✅</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Проверка домашних заданий</h4>
                                         <p>Модалка оценки, отзыв, разделение на "ожидает" и "проверено"</p>
@@ -356,7 +469,15 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">📅</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                                            <rect x="7" y="14" width="3" height="3" fill="currentColor"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Управление расписанием</h4>
                                         <p>Создание уроков кликом, редактирование статусов</p>
@@ -364,7 +485,14 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">👥</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Статистика учеников</h4>
                                         <p>Метрики по каждому ученику, прогресс, последняя активность</p>
@@ -413,7 +541,14 @@
                             
                             <div class="role-features">
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">👥</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Управление учениками</h4>
                                         <p>Профили, абонементы, метрики, активные подписки</p>
@@ -421,7 +556,13 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">👨‍🏫</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                            <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <polyline points="16,11 19,8 22,11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Управление преподавателями</h4>
                                         <p>Профили, нагрузка, расписание на 7 и 30 дней</p>
@@ -429,7 +570,11 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">📚</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Материалы и уроки</h4>
                                         <p>CRUD операции, фильтры, единый реестр занятий</p>
@@ -437,7 +582,14 @@
                                 </div>
                                 
                                 <div class="role-feature-item">
-                                    <div class="role-feature-icon">💳</div>
+                                    <div class="role-feature-icon-wrapper">
+                                        <svg class="role-feature-icon" viewBox="0 0 24 24" width="24" height="24">
+                                            <rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                                            <line x1="7" y1="15" x2="7" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                            <line x1="12" y1="15" x2="17" y2="15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
                                     <div>
                                         <h4>Абонементы и подписки</h4>
                                         <p>Создание, редактирование, архивирование, отслеживание сроков</p>
@@ -493,7 +645,14 @@
             
             <div class="tech-grid">
                 <div class="tech-card">
-                    <div class="tech-icon">⚛️</div>
+                    <div class="tech-icon-wrapper">
+                        <svg class="tech-icon" viewBox="0 0 24 24" width="40" height="40">
+                            <ellipse cx="12" cy="12" rx="10" ry="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
                     <h3 class="tech-name">React + Vite</h3>
                     <p class="tech-description">
                         Быстрый и отзывчивый интерфейс с компонентной архитектурой
@@ -501,7 +660,13 @@
                 </div>
                 
                 <div class="tech-card">
-                    <div class="tech-icon">🗄️</div>
+                    <div class="tech-icon-wrapper">
+                        <svg class="tech-icon" viewBox="0 0 24 24" width="40" height="40">
+                            <ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path fill="none" stroke="currentColor" stroke-width="2" d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path fill="none" stroke="currentColor" stroke-width="2" d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
                     <h3 class="tech-name">Supabase</h3>
                     <p class="tech-description">
                         Auth, PostgreSQL, Realtime подписки и Row Level Security
@@ -509,7 +674,11 @@
                 </div>
                 
                 <div class="tech-card">
-                    <div class="tech-icon">🔐</div>
+                    <div class="tech-icon-wrapper">
+                        <svg class="tech-icon" viewBox="0 0 24 24" width="40" height="40">
+                            <path fill="currentColor" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
                     <h3 class="tech-name">RLS & Security</h3>
                     <p class="tech-description">
                         Политики безопасности на уровне базы данных для каждой роли
@@ -517,7 +686,11 @@
                 </div>
                 
                 <div class="tech-card">
-                    <div class="tech-icon">⚡</div>
+                    <div class="tech-icon-wrapper">
+                        <svg class="tech-icon" viewBox="0 0 24 24" width="40" height="40">
+                            <path fill="currentColor" d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
+                        </svg>
+                    </div>
                     <h3 class="tech-name">Real-time</h3>
                     <p class="tech-description">
                         Мгновенные обновления через WebSocket подписки
@@ -525,7 +698,15 @@
                 </div>
                 
                 <div class="tech-card">
-                    <div class="tech-icon">🎨</div>
+                    <div class="tech-icon-wrapper">
+                        <svg class="tech-icon" viewBox="0 0 24 24" width="40" height="40">
+                            <path fill="currentColor" d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c1.38 0 2.5-.56 2.5-1.25 0-.34-.14-.66-.38-.92-.23-.25-.38-.58-.38-.83 0-.69.56-1.25 1.25-1.25H16c3.31 0 6-2.69 6-6 0-4.96-4.49-9-10-9z"/>
+                            <circle cx="7" cy="10" r="1.5" fill="rgba(10,10,15,0.9)"/>
+                            <circle cx="11" cy="7" r="1.5" fill="rgba(10,10,15,0.9)"/>
+                            <circle cx="15" cy="10" r="1.5" fill="rgba(10,10,15,0.9)"/>
+                            <circle cx="13" cy="14" r="1.5" fill="rgba(10,10,15,0.9)"/>
+                        </svg>
+                    </div>
                     <h3 class="tech-name">Modern UI/UX</h3>
                     <p class="tech-description">
                         Тосты, модалки, анимации, скелетоны, адаптивный дизайн
@@ -533,7 +714,13 @@
                 </div>
                 
                 <div class="tech-card">
-                    <div class="tech-icon">📊</div>
+                    <div class="tech-icon-wrapper">
+                        <svg class="tech-icon" viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
                     <h3 class="tech-name">Оптимизация</h3>
                     <p class="tech-description">
                         Индексы БД, views, агрегаты для быстрых выборок данных
@@ -589,13 +776,24 @@
             <div class="demo-scenarios">
                 <div class="scenario-card">
                     <div class="scenario-header">
-                        <div class="scenario-icon">🎓</div>
+                        <div class="scenario-icon">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path fill="url(#iconGradient)" d="M22 10l-10-5-10 5 10 5z"/>
+                                <path fill="url(#iconGradient)" d="M6 13.26V16c0 2.21 2.69 4 6 4s6-1.79 6-4v-2.74L12 15z"/>
+                            </svg>
+                        </div>
                         <h3 class="scenario-title">Сценарий: Ученик</h3>
                     </div>
                     <div class="scenario-steps">
                         <div class="step">
                             <div class="step-number">1</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14,2 14,8 20,8" fill="currentColor"/>
+                                    </svg>
+                                </div>
                                 <h4>Просмотр домашних заданий</h4>
                                 <p>Фильтры по статусам: все/не выполненные/проверенные</p>
                             </div>
@@ -603,6 +801,11 @@
                         <div class="step">
                             <div class="step-number">2</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <path fill="currentColor" d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                                    </svg>
+                                </div>
                                 <h4>Загрузка решения</h4>
                                 <p>Прикрепление файлов и отправка на проверку</p>
                             </div>
@@ -610,6 +813,11 @@
                         <div class="step">
                             <div class="step-number">3</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <path fill="currentColor" d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/>
+                                    </svg>
+                                </div>
                                 <h4>Получение уведомления</h4>
                                 <p>Real-time оповещение о проверке задания без перезагрузки</p>
                             </div>
@@ -617,6 +825,13 @@
                         <div class="step">
                             <div class="step-number">4</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Просмотр прогресса</h4>
                                 <p>Дашборд с метриками, оценками и таймлайном активности</p>
                             </div>
@@ -626,13 +841,26 @@
                 
                 <div class="scenario-card">
                     <div class="scenario-header">
-                        <div class="scenario-icon">👨‍🏫</div>
+                        <div class="scenario-icon">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path fill="none" stroke="url(#iconGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4" fill="none" stroke="url(#iconGradient)" stroke-width="2"/>
+                                <polyline points="16,11 19,8 22,11" fill="none" stroke="url(#iconGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
                         <h3 class="scenario-title">Сценарий: Преподаватель</h3>
                     </div>
                     <div class="scenario-steps">
                         <div class="step">
                             <div class="step-number">1</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Создание урока</h4>
                                 <p>Клик по свободному слоту в расписании, выбор ученика</p>
                             </div>
@@ -640,6 +868,11 @@
                         <div class="step">
                             <div class="step-number">2</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
                                 <h4>Проверка домашних заданий</h4>
                                 <p>Модалка оценки: балл 0-100, отзыв преподавателя</p>
                             </div>
@@ -647,6 +880,13 @@
                         <div class="step">
                             <div class="step-number">3</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Просмотр аналитики</h4>
                                 <p>Проведено/запланировано уроков, график оценок учеников</p>
                             </div>
@@ -654,6 +894,12 @@
                         <div class="step">
                             <div class="step-number">4</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Статистика учеников</h4>
                                 <p>Таблица с метриками по каждому ученику, пагинация</p>
                             </div>
@@ -663,13 +909,25 @@
                 
                 <div class="scenario-card">
                     <div class="scenario-header">
-                        <div class="scenario-icon">👑</div>
+                        <div class="scenario-icon">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path fill="url(#iconGradient)" d="M12 2l2 6 6-2-3 7h-10l-3-7 6 2z"/>
+                                <rect x="4" y="13" width="16" height="2" fill="url(#iconGradient)"/>
+                                <path fill="url(#iconGradient)" d="M5 18h14v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z"/>
+                            </svg>
+                        </div>
                         <h3 class="scenario-title">Сценарий: Администратор</h3>
                     </div>
                     <div class="scenario-steps">
                         <div class="step">
                             <div class="step-number">1</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Управление учениками</h4>
                                 <p>Поиск, сортировки, метрики активных/неактивных абонементов</p>
                             </div>
@@ -677,6 +935,12 @@
                         <div class="step">
                             <div class="step-number">2</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Создание абонемента</h4>
                                 <p>Настройка lessons_total, end_at, мгновенная видимость ученику</p>
                             </div>
@@ -684,6 +948,13 @@
                         <div class="step">
                             <div class="step-number">3</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <line x1="18" y1="20" x2="18" y2="10" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="12" y1="20" x2="12" y2="4" stroke="currentColor" stroke-width="2"/>
+                                        <line x1="6" y1="20" x2="6" y2="14" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </div>
                                 <h4>Аналитика преподавателей</h4>
                                 <p>Нагрузка за неделю, самый загруженный преподаватель</p>
                             </div>
@@ -691,6 +962,11 @@
                         <div class="step">
                             <div class="step-number">4</div>
                             <div class="step-content">
+                                <div class="step-icon-wrapper">
+                                    <svg class="step-icon" viewBox="0 0 24 24" width="16" height="16">
+                                        <path fill="none" stroke="currentColor" stroke-width="2" d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                                    </svg>
+                                </div>
                                 <h4>Управление материалами</h4>
                                 <p>CRUD операции, фильтры, привязка к заданиям</p>
                             </div>
@@ -715,7 +991,7 @@
                     Свяжитесь со мной для демонстрации MVP и обсуждения возможностей интеграции
                 </p>
                 <div class="cta-buttons">
-                    <a href="mailto:your-email@example.com" class="btn btn-primary btn-large">
+                    <a href="mailto:ingakovalski@gmail.com" class="btn btn-primary btn-large">
                         <span>Запросить демо</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -798,7 +1074,9 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 EduPlatform MVP. Создано с ❤️ для образовательных проектов</p>
+                <p>&copy; 2025 EduPlatform MVP. Создано с <svg viewBox="0 0 24 24" width="16" height="16" style="display: inline-block; vertical-align: middle; margin: 0 2px;">
+                    <path fill="url(#iconGradient)" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg> для образовательных проектов</p>
             </div>
         </div>
     </footer>

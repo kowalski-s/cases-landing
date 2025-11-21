@@ -308,7 +308,7 @@ buttons.forEach(button => {
 console.log('%c🚀 EduPlatform MVP', 'font-size: 24px; font-weight: bold; color: #6366f1;');
 console.log('%cИнтересуетесь технической стороной?', 'font-size: 14px; color: #8b5cf6;');
 console.log('%cStack: React + Vite + Supabase + PostgreSQL + Realtime', 'font-size: 12px; color: #a3a3a3;');
-console.log('%cСвяжитесь со мной: your-email@example.com', 'font-size: 12px; color: #10b981;');
+console.log('%cСвяжитесь со мной: ingakovalski@gmail.com', 'font-size: 12px; color: #10b981;');
 
 // Performance Monitoring
 if (window.performance) {
