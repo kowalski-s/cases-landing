@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPlatform MVP - Платформа для Онлайн-Школ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">EduPlatform</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#features" class="nav-link">Возможности</a></li>
+                    <li><a href="#roles" class="nav-link">Роли</a></li>
+                    <li><a href="#tech" class="nav-link">Технологии</a></li>
+                    <li><a href="#demo" class="nav-link">Демо</a></li>
+                    <li><a href="#contact" class="nav-link btn-primary-nav">Связаться</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>MVP готов к демонстрации</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Платформа</span> для онлайн-школ
+                    <br>нового поколения
+                </h1>
+                <p class="hero-description">
+                    Полноценная CRM-система для управления образовательным процессом: 
+                    расписание, домашние задания, аналитика и уведомления в реальном времени
+                </p>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn btn-primary">
+                        <span>Посмотреть демо</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        <span>Узнать больше</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">3</div>
+                        <div class="stat-label">Роли пользователей</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Ключевых фичей</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">Real-time</div>
+                        <div class="stat-label">Уведомления</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-header">
+                        <div class="card-avatar"></div>
+                        <div class="card-info">
+                            <div class="card-name"></div>
+                            <div class="card-role"></div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-line"></div>
+                        <div class="card-line short"></div>
+                    </div>
+                </div>
+                
+                <div class="floating-card card-2">
+                    <div class="notification-icon">🔔</div>
+                    <div class="notification-content">
+                        <div class="notification-title"></div>
+                        <div class="notification-text"></div>
+                    </div>
+                </div>
+                
+                <div class="floating-card card-3">
+                    <div class="chart-bars">
+                        <div class="chart-bar" style="--height: 60%"></div>
+                        <div class="chart-bar" style="--height: 85%"></div>
+                        <div class="chart-bar" style="--height: 45%"></div>
+                        <div class="chart-bar" style="--height: 90%"></div>
+                        <div class="chart-bar" style="--height: 70%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Всё необходимое для <span class="gradient-text">эффективного обучения</span>
+                </h2>
+                <p class="section-description">
+                    Комплексное решение для управления образовательным процессом с продвинутой аналитикой
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3 class="feature-title">Умное расписание</h3>
+                    <p class="feature-description">
+                        Планирование уроков с учетом загруженности преподавателей. 
+                        Дневной вид, фильтры и управление статусами занятий.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Создание уроков одним кликом</li>
+                        <li>Фильтры по датам и преподавателям</li>
+                        <li>Редактирование и удаление</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3 class="feature-title">Домашние задания</h3>
+                    <p class="feature-description">
+                        Полный цикл работы с ДЗ: создание, отправка с файлами, 
+                        проверка с оценкой и отзывом.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Загрузка материалов и решений</li>
+                        <li>Статусы отправок</li>
+                        <li>Система оценок 0-100</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card featured">
+                    <div class="feature-badge">Ключевая фича</div>
+                    <div class="feature-icon">🔔</div>
+                    <h3 class="feature-title">Real-time уведомления</h3>
+                    <p class="feature-description">
+                        Мгновенные уведомления через Supabase Realtime. 
+                        События обновляются без перезагрузки страницы.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Новые задания и проверки</li>
+                        <li>Быстрые переходы по ссылкам</li>
+                        <li>Центр уведомлений с бейджем</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Аналитика учеников</h3>
+                    <p class="feature-description">
+                        Детальные метрики успеваемости: прогресс по урокам, 
+                        средний балл, таймлайн оценок.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Прогресс в процентах</li>
+                        <li>История оценок</li>
+                        <li>Учет абонементов</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3 class="feature-title">Кабинет преподавателя</h3>
+                    <p class="feature-description">
+                        Аналитика нагрузки, график оценок, статистика по ученикам 
+                        с удобной пагинацией.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Проведенные/запланированные уроки</li>
+                        <li>Статус проверки ДЗ</li>
+                        <li>Средняя оценка учеников</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-title">Админ-панель / CRM</h3>
+                    <p class="feature-description">
+                        Централизованное управление: ученики, преподаватели, 
+                        материалы, уроки, абонементы.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Поиск и сортировки</li>
+                        <li>KPI дашборды</li>
+                        <li>Управление абонементами</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roles Section -->
+    <section class="roles" id="roles">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Персонализированный опыт для <span class="gradient-text">каждой роли</span>
+                </h2>
+                <p class="section-description">
+                    Три типа пользователей с уникальным функционалом и интерфейсом
+                </p>
+            </div>
+            
+            <div class="roles-tabs">
+                <button class="role-tab active" data-role="student">
+                    <span class="role-icon">🎓</span>
+                    <span>Ученик</span>
+                </button>
+                <button class="role-tab" data-role="teacher">
+                    <span class="role-icon">👨‍🏫</span>
+                    <span>Преподаватель</span>
+                </button>
+                <button class="role-tab" data-role="admin">
+                    <span class="role-icon">👑</span>
+                    <span>Администратор</span>
+                </button>
+            </div>
+            
+            <div class="roles-content">
+                <!-- Student Role -->
+                <div class="role-content active" data-role-content="student">
+                    <div class="role-split">
+                        <div class="role-info">
+                            <h3 class="role-title">Личный кабинет ученика</h3>
+                            <p class="role-description">
+                                Весь необходимый функционал для эффективного обучения 
+                                и отслеживания прогресса
+                            </p>
+                            
+                            <div class="role-features">
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">📈</div>
+                                    <div>
+                                        <h4>Дашборд с метриками</h4>
+                                        <p>Уроки всего/осталось/выполнено, прогресс в процентах</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">📝</div>
+                                    <div>
+                                        <h4>Управление заданиями</h4>
+                                        <p>Фильтры, загрузка решений, отслеживание статусов</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">📁</div>
+                                    <div>
+                                        <h4>Материалы и вложения</h4>
+                                        <p>Скачивание материалов, повторная отправка работ</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">⏱️</div>
+                                    <div>
+                                        <h4>Активность и оценки</h4>
+                                        <p>Таймлайн последних активностей и полученных оценок</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="role-visual">
+                            <div class="mockup-browser">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">eduplatform.app/student/dashboard</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="dashboard-cards">
+                                        <div class="mini-card">
+                                            <div class="mini-card-label">Уроков выполнено</div>
+                                            <div class="mini-card-value">24<span>/30</span></div>
+                                        </div>
+                                        <div class="mini-card">
+                                            <div class="mini-card-label">Средний балл</div>
+                                            <div class="mini-card-value">87<span>/100</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-bar-demo">
+                                        <div class="progress-fill" style="--width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Teacher Role -->
+                <div class="role-content" data-role-content="teacher">
+                    <div class="role-split">
+                        <div class="role-info">
+                            <h3 class="role-title">Кабинет преподавателя</h3>
+                            <p class="role-description">
+                                Полный контроль над учебным процессом, проверкой заданий 
+                                и аналитикой учеников
+                            </p>
+                            
+                            <div class="role-features">
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">📊</div>
+                                    <div>
+                                        <h4>Аналитика и нагрузка</h4>
+                                        <p>Проведенные/запланированные уроки, задания, средняя оценка</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">✅</div>
+                                    <div>
+                                        <h4>Проверка домашних заданий</h4>
+                                        <p>Модалка оценки, отзыв, разделение на "ожидает" и "проверено"</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">📅</div>
+                                    <div>
+                                        <h4>Управление расписанием</h4>
+                                        <p>Создание уроков кликом, редактирование статусов</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">👥</div>
+                                    <div>
+                                        <h4>Статистика учеников</h4>
+                                        <p>Метрики по каждому ученику, прогресс, последняя активность</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="role-visual">
+                            <div class="mockup-browser">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">eduplatform.app/teacher/analytics</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="chart-demo">
+                                        <div class="chart-line"></div>
+                                    </div>
+                                    <div class="stats-grid">
+                                        <div class="stat-box">
+                                            <div class="stat-label">Проверено ДЗ</div>
+                                            <div class="stat-number">42</div>
+                                        </div>
+                                        <div class="stat-box">
+                                            <div class="stat-label">Уроков за неделю</div>
+                                            <div class="stat-number">18</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Admin Role -->
+                <div class="role-content" data-role-content="admin">
+                    <div class="role-split">
+                        <div class="role-info">
+                            <h3 class="role-title">Админ-панель и CRM</h3>
+                            <p class="role-description">
+                                Централизованное управление всеми аспектами платформы 
+                                с детальной аналитикой
+                            </p>
+                            
+                            <div class="role-features">
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">👥</div>
+                                    <div>
+                                        <h4>Управление учениками</h4>
+                                        <p>Профили, абонементы, метрики, активные подписки</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">👨‍🏫</div>
+                                    <div>
+                                        <h4>Управление преподавателями</h4>
+                                        <p>Профили, нагрузка, расписание на 7 и 30 дней</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">📚</div>
+                                    <div>
+                                        <h4>Материалы и уроки</h4>
+                                        <p>CRUD операции, фильтры, единый реестр занятий</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="role-feature-item">
+                                    <div class="role-feature-icon">💳</div>
+                                    <div>
+                                        <h4>Абонементы и подписки</h4>
+                                        <p>Создание, редактирование, архивирование, отслеживание сроков</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="role-visual">
+                            <div class="mockup-browser">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="browser-url">eduplatform.app/admin/dashboard</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="admin-tabs">
+                                        <div class="admin-tab active">Ученики</div>
+                                        <div class="admin-tab">Преподаватели</div>
+                                        <div class="admin-tab">Материалы</div>
+                                    </div>
+                                    <div class="admin-kpi">
+                                        <div class="kpi-item">
+                                            <div class="kpi-value">156</div>
+                                            <div class="kpi-label">Всего учеников</div>
+                                        </div>
+                                        <div class="kpi-item">
+                                            <div class="kpi-value">24</div>
+                                            <div class="kpi-label">Преподавателей</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack" id="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Построено на <span class="gradient-text">современном стеке</span>
+                </h2>
+                <p class="section-description">
+                    Надежные технологии для производительности и масштабируемости
+                </p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">⚛️</div>
+                    <h3 class="tech-name">React + Vite</h3>
+                    <p class="tech-description">
+                        Быстрый и отзывчивый интерфейс с компонентной архитектурой
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">🗄️</div>
+                    <h3 class="tech-name">Supabase</h3>
+                    <p class="tech-description">
+                        Auth, PostgreSQL, Realtime подписки и Row Level Security
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">🔐</div>
+                    <h3 class="tech-name">RLS & Security</h3>
+                    <p class="tech-description">
+                        Политики безопасности на уровне базы данных для каждой роли
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">⚡</div>
+                    <h3 class="tech-name">Real-time</h3>
+                    <p class="tech-description">
+                        Мгновенные обновления через WebSocket подписки
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">🎨</div>
+                    <h3 class="tech-name">Modern UI/UX</h3>
+                    <p class="tech-description">
+                        Тосты, модалки, анимации, скелетоны, адаптивный дизайн
+                    </p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-icon">📊</div>
+                    <h3 class="tech-name">Оптимизация</h3>
+                    <p class="tech-description">
+                        Индексы БД, views, агрегаты для быстрых выборок данных
+                    </p>
+                </div>
+            </div>
+            
+            <div class="tech-architecture">
+                <h3 class="architecture-title">Архитектура платформы</h3>
+                <div class="architecture-diagram">
+                    <div class="arch-layer">
+                        <div class="arch-box">
+                            <div class="arch-label">Frontend</div>
+                            <div class="arch-tech">React • Vite • Context API</div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↓</div>
+                    <div class="arch-layer">
+                        <div class="arch-box">
+                            <div class="arch-label">Auth & Guards</div>
+                            <div class="arch-tech">Supabase Auth • Route Guards • RoleGuard</div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↓</div>
+                    <div class="arch-layer">
+                        <div class="arch-box wide">
+                            <div class="arch-label">Backend Services</div>
+                            <div class="arch-services">
+                                <span>PostgreSQL</span>
+                                <span>RLS Policies</span>
+                                <span>Realtime</span>
+                                <span>Storage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Демонстрация <span class="gradient-text">ключевых сценариев</span>
+                </h2>
+                <p class="section-description">
+                    Посмотрите, как работает платформа для разных ролей пользователей
+                </p>
+            </div>
+            
+            <div class="demo-scenarios">
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <div class="scenario-icon">🎓</div>
+                        <h3 class="scenario-title">Сценарий: Ученик</h3>
+                    </div>
+                    <div class="scenario-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Просмотр домашних заданий</h4>
+                                <p>Фильтры по статусам: все/не выполненные/проверенные</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Загрузка решения</h4>
+                                <p>Прикрепление файлов и отправка на проверку</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Получение уведомления</h4>
+                                <p>Real-time оповещение о проверке задания без перезагрузки</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Просмотр прогресса</h4>
+                                <p>Дашборд с метриками, оценками и таймлайном активности</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <div class="scenario-icon">👨‍🏫</div>
+                        <h3 class="scenario-title">Сценарий: Преподаватель</h3>
+                    </div>
+                    <div class="scenario-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Создание урока</h4>
+                                <p>Клик по свободному слоту в расписании, выбор ученика</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Проверка домашних заданий</h4>
+                                <p>Модалка оценки: балл 0-100, отзыв преподавателя</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Просмотр аналитики</h4>
+                                <p>Проведено/запланировано уроков, график оценок учеников</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Статистика учеников</h4>
+                                <p>Таблица с метриками по каждому ученику, пагинация</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scenario-card">
+                    <div class="scenario-header">
+                        <div class="scenario-icon">👑</div>
+                        <h3 class="scenario-title">Сценарий: Администратор</h3>
+                    </div>
+                    <div class="scenario-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Управление учениками</h4>
+                                <p>Поиск, сортировки, метрики активных/неактивных абонементов</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Создание абонемента</h4>
+                                <p>Настройка lessons_total, end_at, мгновенная видимость ученику</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Аналитика преподавателей</h4>
+                                <p>Нагрузка за неделю, самый загруженный преподаватель</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Управление материалами</h4>
+                                <p>CRUD операции, фильтры, привязка к заданиям</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-background">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Готовы увидеть платформу в действии?</h2>
+                <p class="cta-description">
+                    Свяжитесь со мной для демонстрации MVP и обсуждения возможностей интеграции
+                </p>
+                <div class="cta-buttons">
+                    <a href="mailto:your-email@example.com" class="btn btn-primary btn-large">
+                        <span>Запросить демо</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary btn-large">
+                        <span>Узнать больше</span>
+                    </a>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Полностью функциональный MVP</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 10V3L4 14H11V21L20 10H13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Real-time обновления</span>
+                    </div>
+                    <div class="cta-feature">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.21 13.89L7 23L12 20L17 23L15.79 13.88" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Готово к масштабированию</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-icon">📚</span>
+                        <span class="logo-text">EduPlatform</span>
+                    </a>
+                    <p class="footer-description">
+                        Современная платформа для управления онлайн-школами
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Продукт</h4>
+                        <ul>
+                            <li><a href="#features">Возможности</a></li>
+                            <li><a href="#roles">Роли</a></li>
+                            <li><a href="#tech">Технологии</a></li>
+                            <li><a href="#demo">Демо</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Будущее развитие</h4>
+                        <ul>
+                            <li><a href="#">Финансовые отчеты</a></li>
+                            <li><a href="#">Чат ученик-преподаватель</a></li>
+                            <li><a href="#">Telegram интеграция</a></li>
+                            <li><a href="#">API для интеграций</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="mailto:your-email@example.com">Email</a></li>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduPlatform MVP. Создано с ❤️ для образовательных проектов</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
