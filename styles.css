@@ -945,6 +945,13 @@ section {
     filter: drop-shadow(0 2px 4px rgba(99, 102, 241, 0.2));
 }
 
+.role-emoji {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .role-tab:hover .role-icon {
     transform: scale(1.08);
     border-color: rgba(99, 102, 241, 0.5);
@@ -1582,6 +1589,13 @@ section {
     transition: var(--transition-base);
 }
 
+.scenario-emoji {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .scenario-card:hover .scenario-icon {
     transform: translateY(-5px) scale(1.08);
     border-color: rgba(99, 102, 241, 0.6);
@@ -1595,6 +1609,10 @@ section {
 .scenario-card:hover .scenario-icon svg {
     transform: scale(1.15);
     filter: drop-shadow(0 4px 8px rgba(99, 102, 241, 0.5));
+}
+
+.scenario-card:hover .scenario-emoji {
+    transform: scale(1.15);
 }
 
 .scenario-title {
