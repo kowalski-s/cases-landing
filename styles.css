@@ -2249,6 +2249,142 @@ body.light-theme {
     animation: loading 1.5s ease-in-out infinite;
 }
 
+/* Architecture Note */
+.architecture-note {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* How I Work Section */
+.how-i-work {
+    padding: var(--spacing-2xl) 0;
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.work-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.work-step {
+    background: var(--bg-card);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    backdrop-filter: blur(10px);
+    transition: all var(--transition-base);
+}
+
+.work-step:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: 0 8px 32px rgba(99, 102, 241, 0.3);
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.8;
+}
+
+.step-content-block h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.step-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* About Me Section */
+.about-me {
+    padding: var(--spacing-2xl) 0;
+    background: var(--bg-primary);
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-text {
+    background: var(--bg-card);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    backdrop-filter: blur(10px);
+}
+
+.about-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    font-size: 1.1rem;
+}
+
+.about-highlights {
+    list-style: none;
+    margin-top: var(--spacing-lg);
+}
+
+.about-highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.about-highlights svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    stroke: var(--accent-primary);
+}
+
+/* Demo Intro */
+.demo-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .work-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .step-number {
+        font-size: 2.5rem;
+    }
+    
+    .about-text {
+        padding: var(--spacing-lg);
+    }
+}
+
 /* Print Styles */
 @media print {
     .navbar,
