@@ -959,22 +959,43 @@ section {
     justify-content: center;
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-xl);
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: var(--spacing-sm) 0;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(99, 102, 241, 0.3) transparent;
+    -webkit-overflow-scrolling: touch;
+}
+
+.roles-tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+.roles-tabs::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.roles-tabs::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.3);
+    border-radius: 2px;
 }
 
 .role-tab {
     display: flex;
     align-items: center;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-md) var(--spacing-xl);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
     background: var(--bg-card);
     border: 2px solid rgba(255, 255, 255, 0.05);
     border-radius: var(--radius-md);
     color: var(--text-secondary);
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-base);
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: fit-content;
 }
 
 .role-tab:hover {
@@ -999,15 +1020,14 @@ section {
 }
 
 .role-icon {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
     border: 1.5px solid rgba(99, 102, 241, 0.3);
     border-radius: 10px;
-    margin-right: var(--spacing-xs);
     transition: all var(--transition-base);
     flex-shrink: 0;
 }
@@ -2057,7 +2077,23 @@ section {
     }
     
     .roles-tabs {
-        flex-direction: column;
+        justify-content: flex-start;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    .role-tab {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.9375rem;
+    }
+    
+    .role-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .role-tab span {
+        display: block;
     }
     
     .arch-box,
