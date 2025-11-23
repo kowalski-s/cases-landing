@@ -1731,21 +1731,22 @@ section {
     transform: scale(1.08);
     border-color: rgba(99, 102, 241, 0.6);
     box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
-    background: var(--gradient-primary);
-    color: white !important;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(139, 92, 246, 0.25) 100%);
+    color: var(--accent-primary) !important;
 }
 
 .step:hover .step-number::before {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .scenario-card:hover .step-number {
     color: var(--accent-primary);
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
 }
 
 .scenario-card:hover .step:hover .step-number {
-    background: var(--gradient-primary);
-    color: white !important;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
+    color: var(--accent-primary) !important;
 }
 
 .step-content {
