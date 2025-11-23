@@ -2343,13 +2343,12 @@ body.light-theme {
 .work-steps {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     margin-top: var(--spacing-xl);
     position: relative;
-    overflow-x: auto;
-    padding: var(--spacing-md) 0;
+    width: 100%;
 }
 
 .step-arrow {
@@ -2360,6 +2359,8 @@ body.light-theme {
     opacity: 0.6;
     animation: pulseArrow 2s ease-in-out infinite;
     flex-shrink: 0;
+    width: 24px;
+    min-width: 24px;
 }
 
 @keyframes pulseArrow {
@@ -2381,15 +2382,15 @@ body.light-theme {
     background: var(--bg-card);
     border: 1px solid rgba(99, 102, 241, 0.2);
     border-radius: var(--radius-lg);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
     backdrop-filter: blur(10px);
     transition: all var(--transition-base);
     animation: fadeInUp 0.6s ease-out backwards;
     position: relative;
     overflow: hidden;
-    flex: 0 0 auto;
-    width: 280px;
-    min-width: 280px;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .work-step:nth-child(1) { animation-delay: 0.1s; }
