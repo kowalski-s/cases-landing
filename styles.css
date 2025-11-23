@@ -616,27 +616,48 @@ body {
 }
 
 /* Notification Icon - Floating Card Style */
-.notification-icon {
-    width: 48px;
-    height: 48px;
+.notification-icon-wrapper {
+    width: 64px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
-    border: 2px solid rgba(99, 102, 241, 0.4);
-    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    border-radius: var(--radius-md);
     flex-shrink: 0;
-    animation: bounce 2s ease-in-out infinite;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
 }
 
-.notification-icon svg {
+.notification-icon-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    opacity: 0;
+    filter: blur(20px);
+    z-index: -1;
+    transition: opacity var(--transition-base);
+}
+
+.card-2:hover .notification-icon-wrapper::before {
+    opacity: 0.3;
+}
+
+.notification-icon {
+    width: 100%;
+    height: 100%;
     color: var(--accent-primary);
+    filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.5));
+    transition: all var(--transition-base);
 }
 
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+.card-2:hover .notification-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 12px rgba(99, 102, 241, 0.7));
 }
 
 .notification-content {
