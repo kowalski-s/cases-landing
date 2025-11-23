@@ -983,12 +983,13 @@ section {
 }
 
 .role-tab.active {
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     color: var(--text-primary);
-    border: 2px solid transparent;
-    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.25);
+    border: 2px solid rgba(99, 102, 241, 0.5);
+    box-shadow: none;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
 }
 
 /* Role Tab Icons */
