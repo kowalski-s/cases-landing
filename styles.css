@@ -2431,7 +2431,7 @@ body.light-theme {
     box-shadow: 0 12px 40px rgba(99, 102, 241, 0.4);
 }
 
-.step-number {
+.work-step .step-number {
     font-size: 2.5rem;
     font-weight: 800;
     background: var(--gradient-primary);
