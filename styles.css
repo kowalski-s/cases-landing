@@ -2565,19 +2565,34 @@ body.light-theme {
 @media (max-width: 768px) {
     .features-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-md);
     }
     
+    .features-grid .feature-card:nth-child(1),
+    .features-grid .feature-card:nth-child(2),
+    .features-grid .feature-card:nth-child(3),
     .features-grid .feature-card:nth-child(4),
     .features-grid .feature-card:nth-child(5) {
-        grid-column: span 1;
-    }
-    
-    .features-grid .feature-card:nth-child(4) {
         grid-column: 1;
     }
     
-    .features-grid .feature-card:nth-child(5) {
-        grid-column: 1;
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .feature-title {
+        font-size: 1.25rem;
+    }
+    
+    .feature-description {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+    }
+    
+    .feature-icon-wrapper {
+        width: 48px;
+        height: 48px;
+        margin-bottom: var(--spacing-md);
     }
     
     .work-steps {
