@@ -2080,20 +2080,66 @@ section {
         justify-content: flex-start;
         gap: var(--spacing-sm);
         padding: var(--spacing-xs) var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
     }
     
     .role-tab {
         padding: var(--spacing-sm) var(--spacing-md);
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
     }
     
     .role-icon {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
     }
     
     .role-tab span {
         display: block;
+    }
+    
+    .roles-content {
+        min-height: auto;
+    }
+    
+    .role-split {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .role-title {
+        font-size: 1.75rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .role-description {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-md);
+        line-height: 1.6;
+    }
+    
+    .role-features {
+        gap: var(--spacing-md);
+    }
+    
+    .role-feature-item {
+        padding: var(--spacing-sm);
+        gap: var(--spacing-sm);
+    }
+    
+    .role-feature-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    
+    .role-feature-item h4 {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+    
+    .role-feature-item p {
+        font-size: 0.875rem;
+        line-height: 1.5;
     }
     
     .arch-box,
