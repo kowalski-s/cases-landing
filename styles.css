@@ -2679,12 +2679,32 @@ body.light-theme {
     
     .work-steps {
         flex-direction: column;
-        gap: var(--spacing-lg);
+        gap: var(--spacing-md);
+        align-items: stretch;
     }
     
     .step-arrow {
         transform: rotate(90deg);
-        margin: var(--spacing-sm) 0;
+        margin: var(--spacing-xs) 0;
+        width: 32px;
+        height: 32px;
+        align-self: center;
+    }
+    
+    .step-arrow svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    @keyframes pulseArrow {
+        0%, 100% {
+            opacity: 0.4;
+            transform: rotate(90deg) translateY(0);
+        }
+        50% {
+            opacity: 0.8;
+            transform: rotate(90deg) translateY(5px);
+        }
     }
     
     .step-number {
@@ -2693,6 +2713,19 @@ body.light-theme {
     
     .work-step {
         max-width: 100%;
+        width: 100%;
+        padding: var(--spacing-md);
+        flex: none;
+    }
+    
+    .step-content-block h3 {
+        font-size: 1.125rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .step-content-block p {
+        font-size: 0.9375rem;
+        line-height: 1.6;
     }
     
     .about-stats {
