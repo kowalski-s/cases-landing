@@ -2344,10 +2344,12 @@ body.light-theme {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--spacing-xl);
+    flex-wrap: nowrap;
+    gap: var(--spacing-lg);
     margin-top: var(--spacing-xl);
     position: relative;
+    overflow-x: auto;
+    padding: var(--spacing-md) 0;
 }
 
 .step-arrow {
@@ -2385,9 +2387,9 @@ body.light-theme {
     animation: fadeInUp 0.6s ease-out backwards;
     position: relative;
     overflow: hidden;
-    flex: 1;
+    flex: 0 0 auto;
+    width: 280px;
     min-width: 280px;
-    max-width: 320px;
 }
 
 .work-step:nth-child(1) { animation-delay: 0.1s; }
