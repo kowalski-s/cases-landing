@@ -772,20 +772,22 @@ section {
     gap: var(--spacing-lg);
     max-width: 1200px;
     margin: 0 auto;
+    justify-items: center;
 }
 
-.features-grid .feature-card:nth-child(4),
-.features-grid .feature-card:nth-child(5) {
-    grid-column: span 1;
+.features-grid .feature-card {
+    width: 100%;
     max-width: 100%;
 }
 
 .features-grid .feature-card:nth-child(4) {
     grid-column: 2;
+    justify-self: center;
 }
 
 .features-grid .feature-card:nth-child(5) {
     grid-column: 3;
+    justify-self: center;
 }
 
 .feature-card {
@@ -858,7 +860,7 @@ section {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
     border: 2px solid rgba(99, 102, 241, 0.3);
     border-radius: 20px;
-    margin-bottom: var(--spacing-md);
+    margin: 0 auto var(--spacing-md);
     position: relative;
     animation: float 3s ease-in-out infinite;
     transition: all var(--transition-base);
