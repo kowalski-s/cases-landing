@@ -1708,9 +1708,11 @@ section {
     justify-content: center;
     font-weight: 700;
     font-size: 1.125rem;
+    color: var(--accent-primary);
     position: relative;
     transition: all var(--transition-base);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .step-number::before {
@@ -1730,11 +1732,20 @@ section {
     border-color: rgba(99, 102, 241, 0.6);
     box-shadow: 0 8px 25px rgba(99, 102, 241, 0.35);
     background: var(--gradient-primary);
-    color: white;
+    color: white !important;
 }
 
 .step:hover .step-number::before {
     opacity: 0.3;
+}
+
+.scenario-card:hover .step-number {
+    color: var(--accent-primary);
+}
+
+.scenario-card:hover .step:hover .step-number {
+    background: var(--gradient-primary);
+    color: white !important;
 }
 
 .step-content {
