@@ -2078,8 +2078,12 @@ section {
     }
     
     .cta-features {
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+    
+    .cta-feature {
+        white-space: normal;
     }
     
     .footer-content {
