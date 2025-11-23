@@ -2455,34 +2455,30 @@ body.light-theme {
 .about-me {
     padding: var(--spacing-2xl) 0;
     background: var(--bg-primary);
+    position: relative;
 }
 
 .about-content {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
-}
-
-.about-text {
-    background: var(--bg-card);
-    border: 1px solid rgba(99, 102, 241, 0.2);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
-    backdrop-filter: blur(10px);
+    text-align: center;
 }
 
 .about-description {
     color: var(--text-secondary);
     line-height: 1.8;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
     font-size: 1.125rem;
-    max-width: 800px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-stats {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-2xl);
     margin-top: var(--spacing-2xl);
     padding-top: var(--spacing-2xl);
     border-top: 1px solid rgba(99, 102, 241, 0.2);
@@ -2521,6 +2517,19 @@ body.light-theme {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.about-tagline {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid rgba(99, 102, 241, 0.2);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Demo Intro */
@@ -2570,10 +2579,6 @@ body.light-theme {
         max-width: 100%;
     }
     
-    .about-text {
-        padding: var(--spacing-lg);
-    }
-    
     .about-stats {
         flex-direction: column;
         gap: var(--spacing-lg);
@@ -2586,6 +2591,12 @@ body.light-theme {
     
     .about-stat-label {
         font-size: 0.75rem;
+    }
+    
+    .about-tagline {
+        font-size: 1.125rem;
+        margin-top: var(--spacing-lg);
+        padding-top: var(--spacing-lg);
     }
     
     .card-avatar .card-icon {
