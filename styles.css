@@ -2108,8 +2108,7 @@ svg {
 .role-icon svg,
 .role-feature-icon svg,
 .logo-icon svg,
-.badge-icon svg,
-.notification-icon svg {
+.badge-icon svg {
     width: 100%;
     height: 100%;
 }
