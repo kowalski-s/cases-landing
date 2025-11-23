@@ -1708,7 +1708,7 @@ section {
     justify-content: center;
     font-weight: 700;
     font-size: 1.125rem;
-    color: var(--accent-primary);
+    color: var(--accent-primary) !important;
     position: relative;
     transition: all var(--transition-base);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1740,7 +1740,7 @@ section {
 }
 
 .scenario-card:hover .step-number {
-    color: var(--accent-primary);
+    color: var(--accent-primary) !important;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
 }
 
