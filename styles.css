@@ -775,11 +775,11 @@ section {
 }
 
 .features-grid .feature-card:nth-child(4) {
-    grid-column: 1;
+    grid-column: 2;
 }
 
 .features-grid .feature-card:nth-child(5) {
-    grid-column: 2;
+    grid-column: 3;
 }
 
 .feature-card {
