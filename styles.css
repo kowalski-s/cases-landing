@@ -2475,6 +2475,17 @@ body.light-theme {
     }
 }
 
+@keyframes pulseArrowVertical {
+    0%, 100% {
+        opacity: 0.4;
+        transform: rotate(90deg) translateY(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: rotate(90deg) translateY(5px);
+    }
+}
+
 .step-arrow svg {
     filter: drop-shadow(0 2px 8px rgba(99, 102, 241, 0.4));
 }
@@ -2691,20 +2702,13 @@ body.light-theme {
         align-self: center;
     }
     
+    .step-arrow {
+        animation: pulseArrowVertical 2s ease-in-out infinite;
+    }
+    
     .step-arrow svg {
         width: 24px;
         height: 24px;
-    }
-    
-    @keyframes pulseArrow {
-        0%, 100% {
-            opacity: 0.4;
-            transform: rotate(90deg) translateY(0);
-        }
-        50% {
-            opacity: 0.8;
-            transform: rotate(90deg) translateY(5px);
-        }
     }
     
     .step-number {
