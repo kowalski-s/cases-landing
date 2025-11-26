@@ -3562,8 +3562,88 @@ body.light-theme {
     }
     
     .case-detail .container {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .case-detail .roles {
+        padding: var(--spacing-lg) 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .case-detail .roles .container {
+        width: 100%;
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .case-detail .roles-tabs {
+        justify-content: flex-start;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-xs) var(--spacing-sm);
+        margin-bottom: var(--spacing-lg);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .case-detail .role-tab {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.8125rem;
+        min-width: auto;
+        flex-shrink: 0;
+    }
+    
+    .case-detail .role-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .case-detail .role-content {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .case-detail .role-split {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    
+    .case-detail .role-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .case-detail .role-description {
+        font-size: 0.9375rem;
+        margin-bottom: var(--spacing-md);
+        line-height: 1.6;
+    }
+    
+    .case-detail .role-feature-item {
+        padding: var(--spacing-sm);
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .case-detail .role-feature-title {
+        font-size: 0.9375rem;
+        margin-bottom: var(--spacing-xs);
+    }
+    
+    .case-detail .role-feature-description {
+        font-size: 0.8125rem;
+        line-height: 1.5;
+    }
+    
+    .case-detail .screenshot-container {
+        min-height: 200px;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .case-detail .screenshot-image {
+        max-height: 300px;
+        width: 100%;
+        object-fit: contain;
     }
     
     .case-modal-close {
