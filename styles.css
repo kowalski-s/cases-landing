@@ -2666,6 +2666,13 @@ section {
         position: relative;
     }
     
+    .stat-item-connection .connection-icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        color: var(--accent-primary);
+    }
+    
     .stat-item-connection .stat-label {
         text-align: center;
     }
