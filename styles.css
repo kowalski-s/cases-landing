@@ -2648,19 +2648,24 @@ section {
     }
     
     .hero-stats {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: var(--spacing-md);
         margin-top: var(--spacing-lg);
         align-items: center;
+        justify-content: center;
     }
     
     .stat-item {
         align-items: center;
         text-align: center;
+        flex: 1 1 auto;
+        min-width: 120px;
     }
     
     .stat-item-connection {
-        width: 100%;
+        flex: 1 1 auto;
+        min-width: 140px;
         align-items: center;
     }
     
@@ -2875,34 +2880,41 @@ section {
     }
     
     .hero-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
         gap: var(--spacing-sm);
         align-items: center;
+        justify-content: center;
     }
     
     .stat-item {
         align-items: center;
         text-align: center;
+        flex: 1 1 auto;
+        min-width: 100px;
     }
     
     .stat-value {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
     .stat-label {
-        font-size: 0.8125rem;
+        font-size: 0.75rem;
     }
     
     .stat-item-connection {
+        flex: 1 1 auto;
+        min-width: 120px;
         align-items: center;
     }
     
     .stat-item-connection .connection-icon-wrapper {
         height: 2rem;
-        width: 40px;
+        width: 36px;
     }
     
     .stat-item-connection .stat-label {
-        font-size: 0.8125rem;
+        font-size: 0.75rem;
         text-align: center;
     }
 }
