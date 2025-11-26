@@ -519,6 +519,12 @@ body {
     color: var(--accent-primary);
     width: 40px;
     height: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.connection-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.8));
 }
 
 .stat-item-connection .stat-label {
@@ -2671,6 +2677,12 @@ section {
         width: 40px;
         height: 40px;
         color: var(--accent-primary);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .stat-item-connection .connection-icon:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.8));
     }
     
     .stat-item-connection .stat-label {
@@ -2954,6 +2966,12 @@ section {
         width: 28px;
         height: 28px;
         color: var(--accent-primary);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .stat-item-connection .connection-icon:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.8));
     }
     
     .stat-item-connection .stat-label {
