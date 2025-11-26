@@ -897,9 +897,7 @@ section {
     inset: 0;
     z-index: 9999;
     display: none;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-lg);
+    flex-direction: column;
     opacity: 0;
     transition: opacity var(--transition-base);
 }
@@ -912,23 +910,38 @@ section {
 .case-modal-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(10px);
+    background: var(--bg-primary);
     z-index: -1;
 }
 
 .case-modal-content {
     position: relative;
     background: var(--bg-secondary);
-    border: 1px solid rgba(99, 102, 241, 0.3);
-    border-radius: var(--radius-lg);
-    max-width: 1400px;
     width: 100%;
-    max-height: 90vh;
+    height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: var(--spacing-2xl);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     animation: modalSlideIn 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.case-modal-content::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+.case-modal-content::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.5);
+    border-radius: 4px;
+}
+
+.case-modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.7);
 }
 
 @keyframes modalSlideIn {
@@ -968,10 +981,27 @@ section {
 
 .case-detail {
     display: none;
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: var(--spacing-2xl);
 }
 
 .case-detail.active {
     display: block;
+}
+
+/* Ensure content inside modal is not cut off */
+.case-detail .container {
+    width: 100%;
+}
+
+.case-detail .roles,
+.case-detail .tech-stack,
+.case-detail .demo-section {
+    padding: var(--spacing-xl) 0;
+    width: 100%;
 }
 
 .case-header {
@@ -3145,7 +3175,15 @@ body.light-theme {
     
     .case-modal-content {
         padding: var(--spacing-lg);
-        max-height: 95vh;
+    }
+    
+    .case-detail {
+        max-width: 100%;
+    }
+    
+    .case-detail .container {
+        padding-left: 0;
+        padding-right: 0;
     }
     
     .case-modal-close {
