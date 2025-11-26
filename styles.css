@@ -3122,8 +3122,8 @@ body.light-theme {
     color: var(--text-primary);
     font-size: 1.25rem;
     font-weight: 600;
-    margin-top: var(--spacing-xl);
-    padding-top: var(--spacing-xl);
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
     border-top: 1px solid rgba(99, 102, 241, 0.2);
     background: var(--gradient-primary);
     -webkit-background-clip: text;
