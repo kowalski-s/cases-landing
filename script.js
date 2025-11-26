@@ -75,6 +75,61 @@ roleTabs.forEach(tab => {
     });
 });
 
+// Case Modal
+const caseModal = document.getElementById('caseModal');
+const casePreviews = document.querySelectorAll('.case-preview');
+const caseModalClose = document.querySelector('.case-modal-close');
+const caseDetails = document.querySelectorAll('.case-detail');
+
+// Open modal on case preview click
+casePreviews.forEach(preview => {
+    preview.addEventListener('click', () => {
+        const caseId = preview.getAttribute('data-case');
+        
+        // Hide all case details
+        caseDetails.forEach(detail => detail.classList.remove('active'));
+        
+        // Show selected case detail
+        const selectedDetail = document.querySelector(`[data-case-detail="${caseId}"]`);
+        if (selectedDetail) {
+            selectedDetail.classList.add('active');
+        }
+        
+        // Show modal
+        caseModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        // Scroll to top of modal content
+        const modalContent = caseModal.querySelector('.case-modal-content');
+        if (modalContent) {
+            modalContent.scrollTop = 0;
+        }
+    });
+});
+
+// Close modal
+function closeCaseModal() {
+    caseModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+if (caseModalClose) {
+    caseModalClose.addEventListener('click', closeCaseModal);
+}
+
+// Close modal on overlay click
+const caseModalOverlay = document.querySelector('.case-modal-overlay');
+if (caseModalOverlay) {
+    caseModalOverlay.addEventListener('click', closeCaseModal);
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && caseModal.classList.contains('active')) {
+        closeCaseModal();
+    }
+});
+
 // Intersection Observer for Animations
 const observerOptions = {
     root: null,

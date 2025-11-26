@@ -246,20 +246,60 @@
                 </p>
             </div>
             
-            <!-- Case: Educational Platform -->
-            <div class="case-card">
-                <div class="case-header">
-                    <div class="case-badge">
-                        <span>MVP за 7 дней</span>
+            <!-- Cases Grid -->
+            <div class="cases-grid">
+                <!-- Case Preview: Educational Platform -->
+                <div class="case-preview" data-case="education">
+                    <div class="case-preview-image">
+                        <div class="case-avatar">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
                     </div>
-                    <h3 class="case-title">Образовательная платформа для онлайн-школ</h3>
-                    <p class="case-description">
-                        Полноценная платформа, заменяющая таблицы, чат-боты и разрозненные сервисы. Реализованы расписание, домашние задания, уведомления, аналитика и финансы в одном месте.
-                    </p>
+                    <div class="case-preview-content">
+                        <div class="case-badge">
+                            <span>MVP за 7 дней</span>
+                        </div>
+                        <h3 class="case-preview-title">Образовательная платформа</h3>
+                        <p class="case-preview-description">
+                            Полноценная платформа для онлайн-школ: расписание, домашние задания, уведомления, аналитика и финансы в одном месте.
+                        </p>
+                        <button class="case-preview-btn">
+                            <span>Подробнее</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                
-                <!-- Roles Section (moved inside case) -->
-                <div class="roles" id="roles">
+            </div>
+            
+            <!-- Case Modal -->
+            <div class="case-modal" id="caseModal">
+                <div class="case-modal-overlay"></div>
+                <div class="case-modal-content">
+                    <button class="case-modal-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Case Detail: Educational Platform -->
+                    <div class="case-detail" data-case-detail="education">
+                        <div class="case-header">
+                            <div class="case-badge">
+                                <span>MVP за 7 дней</span>
+                            </div>
+                            <h3 class="case-title">Образовательная платформа для онлайн-школ</h3>
+                            <p class="case-description">
+                                Полноценная платформа, заменяющая таблицы, чат-боты и разрозненные сервисы. Реализованы расписание, домашние задания, уведомления, аналитика и финансы в одном месте.
+                            </p>
+                        </div>
+                        
+                        <!-- Roles Section (moved inside case) -->
+                        <div class="roles" id="roles">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
@@ -696,6 +736,12 @@
                     </p>
                 </div>
             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>
                 </div>
             </div>
         </div>
