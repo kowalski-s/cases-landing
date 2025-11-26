@@ -476,7 +476,9 @@ body {
     animation-fill-mode: forwards;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    flex: 1 1 0;
+    text-align: center;
 }
 
 .stat-item:nth-child(2) {
@@ -490,8 +492,10 @@ body {
 .stat-item-connection {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0;
+    flex: 1 1 0;
+    text-align: center;
 }
 
 .stat-item-connection .connection-icon-wrapper {
