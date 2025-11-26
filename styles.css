@@ -2651,8 +2651,8 @@ section {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: var(--spacing-sm);
-        margin-top: var(--spacing-md);
-        align-items: center;
+        margin-top: var(--spacing-sm);
+        align-items: flex-start;
         justify-content: center;
     }
     
@@ -2661,12 +2661,16 @@ section {
         text-align: center;
         flex: 0 1 auto;
         min-width: 0;
+        display: flex;
+        flex-direction: column;
     }
     
     .stat-item-connection {
         flex: 0 1 auto;
         min-width: 0;
         align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     
     .stat-item-connection .stat-label {
@@ -2883,8 +2887,8 @@ section {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: var(--spacing-xs);
-        margin-top: var(--spacing-sm);
-        align-items: center;
+        margin-top: var(--spacing-xs);
+        align-items: flex-start;
         justify-content: center;
     }
     
@@ -2893,30 +2897,38 @@ section {
         text-align: center;
         flex: 0 1 auto;
         min-width: 0;
+        display: flex;
+        flex-direction: column;
     }
     
     .stat-value {
         font-size: 1.5rem;
+        line-height: 1;
     }
     
     .stat-label {
         font-size: 0.7rem;
+        margin-top: 0.25rem;
     }
     
     .stat-item-connection {
         flex: 0 1 auto;
         min-width: 0;
         align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     
     .stat-item-connection .connection-icon-wrapper {
-        height: 1.75rem;
-        width: 32px;
+        height: 1.5rem;
+        width: 28px;
+        margin-bottom: 0.25rem;
     }
     
     .stat-item-connection .stat-label {
         font-size: 0.7rem;
         text-align: center;
+        line-height: 1.2;
     }
 }
 
