@@ -4236,6 +4236,30 @@ body.light-theme {
         height: auto;
         gap: var(--spacing-sm);
     }
+    
+    .case-detail .mockup-browser {
+        overflow: hidden;
+        transform: none;
+    }
+    
+    .case-detail .browser-header {
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs);
+    }
+    
+    .case-detail .browser-dots {
+        gap: 3px;
+    }
+    
+    .case-detail .browser-dots span {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .case-detail .browser-url {
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
 }
 
 /* Print Styles */
