@@ -3968,6 +3968,7 @@ body.light-theme {
     }
     
     .case-detail .screenshot-image {
+        position: static;
         max-height: none;
         width: 100%;
         max-width: 100%;
@@ -3975,9 +3976,21 @@ body.light-theme {
         object-fit: contain;
         display: block;
         margin: 0 auto;
-        position: relative;
         box-sizing: border-box;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .case-detail .screenshot-image.active {
+        position: static;
+        transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .mockup-browser {
@@ -4149,12 +4162,26 @@ body.light-theme {
     }
     
     .case-detail .screenshot-image {
+        position: static;
         max-height: none;
         width: 100%;
+        max-width: 100%;
         height: auto;
         object-fit: contain;
         display: block;
-        position: relative;
+        margin: 0 auto;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .case-detail .screenshot-image.active {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .role-split {
