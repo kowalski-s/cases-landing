@@ -2655,31 +2655,59 @@ section {
     }
     
     .hero-stats {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 0;
-        margin-top: var(--spacing-sm);
-        align-items: flex-start;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-sm);
         width: 100%;
-        max-width: 100%;
+        margin-top: calc(var(--spacing-md) * -0.5);
+        padding: 0 var(--spacing-sm);
     }
     
     .stat-item {
-        align-items: center;
-        text-align: center;
-        flex: 1 1 0;
-        min-width: 0;
+        flex: 1;
+        max-width: 33%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
     }
     
     .stat-item-connection {
-        flex: 1 1 0;
-        min-width: 0;
-        align-items: center;
+        flex: 1;
+        max-width: 33%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    .stat-value {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .stat-label {
+        text-align: center;
+        margin-top: var(--spacing-xs);
+    }
+    
+    .stat-item-connection .connection-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto var(--spacing-xs) auto;
+        position: relative;
+    }
+    
+    .stat-item-connection .stat-label {
+        text-align: center;
     }
     
     .stat-item-connection .stat-label {
@@ -2893,53 +2921,71 @@ section {
     }
     
     .hero-stats {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 0;
-        margin-top: var(--spacing-xs);
-        align-items: flex-start;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-xs);
         width: 100%;
-        max-width: 100%;
+        margin-top: calc(var(--spacing-sm) * -0.75);
+        padding: 0 var(--spacing-xs);
     }
     
     .stat-item {
-        align-items: center;
-        text-align: center;
-        flex: 1 1 0;
-        min-width: 0;
+        flex: 1;
+        max-width: 33%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
     }
     
     .stat-value {
         font-size: 1.5rem;
         line-height: 1;
+        display: block;
+        margin: 0 auto;
     }
     
     .stat-label {
         font-size: 0.7rem;
-        margin-top: 0.25rem;
+        margin-top: var(--spacing-xs);
+        text-align: center;
     }
     
     .stat-item-connection {
-        flex: 1 1 0;
-        min-width: 0;
-        align-items: center;
+        flex: 1;
+        max-width: 33%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
     }
     
     .stat-item-connection .connection-icon-wrapper {
-        height: 1.5rem;
-        width: 28px;
-        margin-bottom: 0.25rem;
+        height: 1.75rem;
+        width: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto var(--spacing-xs) auto;
+        position: relative;
     }
     
     .stat-item-connection .stat-label {
         font-size: 0.7rem;
         text-align: center;
         line-height: 1.2;
+    }
+    
+    .stat-item-connection .connection-icon,
+    .stat-item-connection .connection-pulse {
+        position: relative;
     }
 }
 
