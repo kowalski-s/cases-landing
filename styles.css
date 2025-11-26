@@ -3594,8 +3594,16 @@ body.light-theme {
     }
     
     .case-detail .role-content {
+        width: 100%;
+        max-width: 100%;
         height: auto;
         overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        transform: none;
     }
     
     .case-detail .role-split {
@@ -3603,24 +3611,64 @@ body.light-theme {
         gap: var(--spacing-md);
         align-items: flex-start;
         height: auto;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        transform: none;
+    }
+    
+    .case-detail .role-info {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+        transform: none;
     }
     
     .case-detail .role-visual {
         width: 100%;
+        max-width: 100%;
         height: auto;
         min-height: auto;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+        transform: none;
+    }
+    
+    .case-detail .screenshot-viewer {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
     }
     
     .case-detail .screenshot-container {
         position: relative;
         width: 100%;
+        max-width: 100%;
         height: auto;
         min-height: auto;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         overflow: visible;
+        overflow-x: visible;
         margin-bottom: var(--spacing-md);
+        box-sizing: border-box;
+        padding: 0;
+        transform: none;
     }
     
     .case-detail .screenshot-image {
@@ -3631,9 +3679,11 @@ body.light-theme {
         max-height: none;
         object-fit: contain;
         display: block;
+        margin: 0 auto;
         opacity: 1;
         visibility: visible;
         transform: none;
+        box-sizing: border-box;
     }
     
     .case-detail .screenshot-image.active {
@@ -3645,12 +3695,26 @@ body.light-theme {
         min-height: auto;
         height: auto;
         padding: var(--spacing-md);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: visible;
     }
     
     .case-detail .roles .container {
         width: 100%;
-        padding-left: var(--spacing-md);
-        padding-right: var(--spacing-md);
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+    }
+    
+    .case-detail .roles {
+        overflow-x: visible;
+        overflow-y: visible;
     }
     
     .case-detail .roles-tabs {
@@ -3676,23 +3740,54 @@ body.light-theme {
     
     .case-detail .role-content {
         width: 100%;
+        max-width: 100%;
         padding: 0;
+        box-sizing: border-box;
+        overflow: visible;
+        transform: none;
     }
     
     .case-detail .role-split {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        transform: none;
+    }
+    
+    .case-detail .role-info {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+        transform: none;
     }
     
     .case-detail .role-title {
         font-size: 1.5rem;
         margin-bottom: var(--spacing-sm);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .case-detail .role-description {
         font-size: 0.9375rem;
         margin-bottom: var(--spacing-md);
         line-height: 1.6;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .case-detail .role-features {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: visible;
     }
     
     .case-detail .role-feature-item {
@@ -3701,6 +3796,10 @@ body.light-theme {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--spacing-xs);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: visible;
     }
     
     .case-detail .role-feature-icon-wrapper {
@@ -3711,13 +3810,18 @@ body.light-theme {
     
     .case-detail .role-feature-content {
         width: 100%;
+        max-width: 100%;
         flex: 1;
+        box-sizing: border-box;
+        overflow: visible;
     }
     
     .case-detail .role-feature-title {
         font-size: 0.875rem;
         margin-bottom: var(--spacing-xs);
         line-height: 1.3;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .case-detail .role-feature-description {
@@ -3727,34 +3831,49 @@ body.light-theme {
         overflow-wrap: break-word;
     }
     
+    .case-detail .role-visual {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+        transform: none;
+    }
+    
     .case-detail .screenshot-container {
         min-height: auto;
         margin-bottom: var(--spacing-md);
         width: 100%;
+        max-width: 100%;
         overflow: visible;
+        overflow-x: visible;
         height: auto;
+        box-sizing: border-box;
+        padding: 0;
+        transform: none;
     }
     
     .case-detail .screenshot-image {
         max-height: none;
         width: 100%;
+        max-width: 100%;
         height: auto;
         object-fit: contain;
         display: block;
+        margin: 0 auto;
         position: relative;
+        box-sizing: border-box;
+        transform: none;
     }
     
-    .case-detail .role-split {
-        gap: var(--spacing-sm);
-    }
-    
-    .case-detail .role-info {
+    .case-detail .browser-content {
         width: 100%;
-        height: auto;
-    }
-    
-    .case-detail .role-features {
-        height: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: visible;
     }
     
     .case-modal-close {
