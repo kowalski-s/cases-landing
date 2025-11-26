@@ -848,7 +848,7 @@
                     <!-- Case CTA Button -->
                     <div class="case-cta">
                         <div class="container">
-                            <a href="#contact" class="btn btn-primary case-cta-btn" onclick="document.getElementById('caseModal').classList.remove('active'); document.body.style.overflow = 'auto';">
+                            <a href="#contact" class="btn btn-primary case-cta-btn" onclick="document.getElementById('caseModal').classList.remove('active'); document.body.style.overflow = 'auto'; setTimeout(() => { const contactSection = document.getElementById('contact'); if (contactSection) { contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }, 100);">
                                 <span>Обсудить создание веб-приложения</span>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
