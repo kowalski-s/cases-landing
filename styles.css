@@ -3623,27 +3623,55 @@ body.light-theme {
     .case-detail .role-feature-item {
         padding: var(--spacing-sm);
         margin-bottom: var(--spacing-sm);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    
+    .case-detail .role-feature-icon-wrapper {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    
+    .case-detail .role-feature-content {
+        width: 100%;
+        flex: 1;
     }
     
     .case-detail .role-feature-title {
-        font-size: 0.9375rem;
+        font-size: 0.875rem;
         margin-bottom: var(--spacing-xs);
+        line-height: 1.3;
     }
     
     .case-detail .role-feature-description {
         font-size: 0.8125rem;
-        line-height: 1.5;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .case-detail .screenshot-container {
-        min-height: 200px;
+        min-height: 180px;
         margin-bottom: var(--spacing-md);
+        width: 100%;
+        overflow: hidden;
     }
     
     .case-detail .screenshot-image {
-        max-height: 300px;
+        max-height: 280px;
         width: 100%;
         object-fit: contain;
+        display: block;
+    }
+    
+    .case-detail .role-split {
+        gap: var(--spacing-md);
+    }
+    
+    .case-detail .role-info {
+        width: 100%;
     }
     
     .case-modal-close {
@@ -3737,27 +3765,54 @@ body.light-theme {
     .case-detail .role-feature-item {
         padding: var(--spacing-xs);
         gap: var(--spacing-xs);
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     .case-detail .role-feature-icon-wrapper {
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+    
+    .case-detail .role-feature-content {
+        width: 100%;
+        flex: 1;
     }
     
     .case-detail .role-feature-title {
-        font-size: 0.875rem;
+        font-size: 0.8125rem;
+        margin-bottom: 2px;
+        line-height: 1.3;
     }
     
     .case-detail .role-feature-description {
         font-size: 0.75rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .case-detail .screenshot-container {
-        min-height: 150px;
+        min-height: 120px;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: var(--spacing-sm);
     }
     
     .case-detail .screenshot-image {
-        max-height: 250px;
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain;
+        display: block;
+    }
+    
+    .case-detail .role-split {
+        gap: var(--spacing-sm);
+    }
+    
+    .case-detail .role-info {
+        width: 100%;
     }
 }
 
