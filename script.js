@@ -75,33 +75,6 @@ roleTabs.forEach(tab => {
     });
 });
 
-// Screenshot Navigation Switching
-const screenshotNavBtns = document.querySelectorAll('.screenshot-nav-btn');
-const screenshotImages = document.querySelectorAll('.screenshot-image');
-
-screenshotNavBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const screenshotType = btn.getAttribute('data-screenshot');
-        
-        // Remove active class from all buttons
-        screenshotNavBtns.forEach(b => b.classList.remove('active'));
-        
-        // Add active class to clicked button
-        btn.classList.add('active');
-        
-        // Hide all screenshots
-        screenshotImages.forEach(img => {
-            img.classList.remove('active');
-        });
-        
-        // Show selected screenshot
-        const selectedScreenshot = document.querySelector(`.screenshot-image[data-screenshot="${screenshotType}"]`);
-        if (selectedScreenshot) {
-            selectedScreenshot.classList.add('active');
-        }
-    });
-});
-
 // Intersection Observer for Animations
 const observerOptions = {
     root: null,
