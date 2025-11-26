@@ -2614,37 +2614,49 @@ section {
     
     .hero-content {
         padding-top: var(--spacing-lg);
+        text-align: center;
+        align-items: center;
     }
     
     .hero-title {
         font-size: 2rem;
         line-height: 1.2;
         margin-bottom: var(--spacing-md);
+        text-align: center;
     }
     
     .hero-description {
         font-size: 1rem;
         line-height: 1.6;
         margin-bottom: var(--spacing-lg);
+        text-align: center;
     }
     
     .hero-cta {
         flex-direction: column;
         gap: var(--spacing-sm);
+        align-items: center;
     }
     
     .hero-stats {
         flex-direction: column;
         gap: var(--spacing-md);
         margin-top: var(--spacing-lg);
+        align-items: center;
+    }
+    
+    .stat-item {
+        align-items: center;
+        text-align: center;
     }
     
     .stat-item-connection {
         width: 100%;
+        align-items: center;
     }
     
     .stat-item-connection .stat-label {
-        text-align: left;
+        text-align: center;
         font-size: 0.875rem;
         line-height: 1.4;
     }
@@ -2813,18 +2825,22 @@ section {
     
     .hero-content {
         padding-top: var(--spacing-md);
+        text-align: center;
+        align-items: center;
     }
     
     .hero-title {
         font-size: 1.75rem;
         line-height: 1.2;
         margin-bottom: var(--spacing-sm);
+        text-align: center;
     }
     
     .hero-description {
         font-size: 0.9375rem;
         line-height: 1.6;
         margin-bottom: var(--spacing-md);
+        text-align: center;
     }
     
     .hero-visual {
@@ -2836,8 +2852,18 @@ section {
         font-size: 0.9375rem;
     }
     
+    .hero-cta {
+        align-items: center;
+    }
+    
     .hero-stats {
         gap: var(--spacing-sm);
+        align-items: center;
+    }
+    
+    .stat-item {
+        align-items: center;
+        text-align: center;
     }
     
     .stat-value {
@@ -2848,6 +2874,10 @@ section {
         font-size: 0.8125rem;
     }
     
+    .stat-item-connection {
+        align-items: center;
+    }
+    
     .stat-item-connection .connection-icon-wrapper {
         height: 2rem;
         width: 40px;
@@ -2855,6 +2885,7 @@ section {
     
     .stat-item-connection .stat-label {
         font-size: 0.8125rem;
+        text-align: center;
     }
 }
 
