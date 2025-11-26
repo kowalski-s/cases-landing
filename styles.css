@@ -478,23 +478,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
 }
 
 .connection-icon-wrapper {
     position: relative;
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: var(--spacing-xs);
 }
 
 .connection-icon {
     position: relative;
     z-index: 2;
     color: var(--accent-primary);
-    filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.6));
+    filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.6));
     animation: pulseIcon 2s ease-in-out infinite;
 }
 
@@ -503,8 +504,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     border: 2px solid var(--accent-primary);
     border-radius: 50%;
     opacity: 0;
@@ -542,6 +543,14 @@ body {
     color: var(--text-secondary);
     text-align: center;
     margin-top: 0;
+}
+
+.stat-label-two-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    line-height: 1.3;
 }
 
 .stat-value {
