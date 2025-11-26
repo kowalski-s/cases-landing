@@ -2657,6 +2657,12 @@ section {
     .stat-value {
         display: block;
         margin: 0 auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .stat-item:hover .stat-value {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.8));
     }
     
     .stat-label {
@@ -2932,6 +2938,12 @@ section {
         line-height: 1;
         display: block;
         margin: 0 auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    
+    .stat-item:hover .stat-value {
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 6px rgba(99, 102, 241, 0.8));
     }
     
     .stat-label {
