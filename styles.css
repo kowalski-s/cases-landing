@@ -2942,6 +2942,13 @@ section {
         position: relative;
     }
     
+    .stat-item-connection .connection-icon {
+        position: relative;
+        width: 28px;
+        height: 28px;
+        color: var(--accent-primary);
+    }
+    
     .stat-item-connection .stat-label {
         font-size: 0.7rem;
         text-align: center;
@@ -2951,10 +2958,6 @@ section {
     .stat-label-two-lines {
         align-items: center;
         text-align: center;
-    }
-    
-    .stat-item-connection .connection-icon {
-        position: relative;
     }
 }
 
