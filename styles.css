@@ -3670,29 +3670,47 @@ body.light-theme {
     }
     
     .case-detail .role-info {
+        position: static;
         width: 100%;
         max-width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
         box-sizing: border-box;
         padding-left: 1rem;
         padding-right: 1rem;
         margin-left: 0;
         margin-right: 0;
         overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .role-visual {
+        position: static;
         width: 100%;
         max-width: 100%;
         height: auto;
         min-height: auto;
+        max-height: none;
         box-sizing: border-box;
         padding-left: 1rem;
         padding-right: 1rem;
         margin-left: 0;
         margin-right: 0;
         overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .screenshot-viewer {
@@ -3710,20 +3728,26 @@ body.light-theme {
     }
     
     .case-detail .screenshot-container {
-        position: relative;
+        position: static;
         width: 100%;
         max-width: 100%;
         height: auto;
         min-height: auto;
+        max-height: none;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         overflow: visible;
         overflow-x: visible;
+        overflow-y: visible;
         margin-bottom: var(--spacing-md);
         box-sizing: border-box;
         padding: 0;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .screenshot-image {
