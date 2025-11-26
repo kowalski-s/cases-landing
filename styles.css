@@ -551,6 +551,13 @@ body {
     background-clip: text;
     line-height: 1;
     margin-bottom: var(--spacing-xs);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: inline-block;
+}
+
+.stat-item:hover .stat-value {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.8));
 }
 
 .stat-label {
