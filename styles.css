@@ -2612,10 +2612,17 @@ section {
         font-size: 1.125rem;
     }
     
+    .hero-container {
+        display: flex;
+        justify-content: center;
+    }
+    
     .hero-content {
         padding-top: var(--spacing-lg);
         text-align: center;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
     }
     
     .hero-title {
@@ -2823,10 +2830,17 @@ section {
         font-size: 1rem;
     }
     
+    .hero-container {
+        display: flex;
+        justify-content: center;
+    }
+    
     .hero-content {
         padding-top: var(--spacing-md);
         text-align: center;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
     }
     
     .hero-title {
