@@ -3580,25 +3580,60 @@ body.light-theme {
     }
     
     .case-detail .roles {
+        position: static;
         padding: var(--spacing-md) 0;
         width: 100%;
-        overflow-x: hidden;
+        max-width: 100%;
+        overflow-x: visible;
         overflow-y: visible;
         height: auto;
+        min-height: auto;
+        max-height: none;
+        box-sizing: border-box;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .case-detail .roles .container {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .roles-content {
+        position: static;
         min-height: auto;
         height: auto;
         max-height: none;
-        position: relative;
         overflow: visible;
         overflow-x: visible;
         overflow-y: visible;
         box-sizing: border-box;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .role-content {
+        position: static;
         width: 100%;
         max-width: 100%;
         height: auto;
@@ -3611,19 +3646,27 @@ body.light-theme {
         margin: 0;
         box-sizing: border-box;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .role-split {
-        grid-template-columns: 1fr;
-        gap: var(--spacing-md);
-        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         height: auto;
+        min-height: auto;
+        max-height: none;
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
         padding: 0;
         margin: 0;
         transform: none;
+        overflow: visible;
+        align-items: stretch;
     }
     
     .case-detail .role-info {
@@ -3684,7 +3727,7 @@ body.light-theme {
     }
     
     .case-detail .screenshot-image {
-        position: relative;
+        position: static;
         width: 100%;
         max-width: 100%;
         height: auto;
@@ -3696,11 +3739,19 @@ body.light-theme {
         visibility: visible;
         transform: none;
         box-sizing: border-box;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .screenshot-image.active {
-        position: relative;
+        position: static;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .browser-content {
@@ -3809,6 +3860,7 @@ body.light-theme {
     }
     
     .case-detail .role-feature-item {
+        position: static;
         padding: var(--spacing-sm);
         margin-bottom: var(--spacing-sm);
         flex-direction: column;
@@ -3821,6 +3873,10 @@ body.light-theme {
         max-height: none;
         box-sizing: border-box;
         overflow: visible;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .role-feature-icon-wrapper {
@@ -3853,6 +3909,7 @@ body.light-theme {
     }
     
     .case-detail .role-visual {
+        position: static;
         width: 100%;
         max-width: 100%;
         height: auto;
@@ -3867,6 +3924,10 @@ body.light-theme {
         overflow-x: visible;
         overflow-y: visible;
         transform: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
     }
     
     .case-detail .screenshot-container {
