@@ -3703,6 +3703,8 @@ body.light-theme {
         padding-right: 1rem;
         margin-left: 0;
         margin-right: 0;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
         overflow: visible;
         overflow-x: visible;
         overflow-y: visible;
@@ -3711,6 +3713,30 @@ body.light-theme {
         bottom: auto;
         left: auto;
         right: auto;
+    }
+    
+    .case-detail .mockup-browser {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        transform: scale(0.85);
+        transform-origin: top center;
+        margin-bottom: 0;
+    }
+    
+    .case-detail .mockup-browser::after {
+        content: '';
+        display: block;
+        padding-bottom: 0;
+        height: 0;
     }
     
     .case-detail .screenshot-viewer {
@@ -4070,7 +4096,28 @@ body.light-theme {
         overflow: visible;
         overflow-x: visible;
         overflow-y: visible;
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm);
+    }
+    
+    .case-detail .dashboard-cards {
+        gap: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .case-detail .mini-card {
+        padding: var(--spacing-sm);
+    }
+    
+    .case-detail .mini-card-label {
+        font-size: 0.75rem;
+    }
+    
+    .case-detail .mini-card-value {
+        font-size: 1.5rem;
+    }
+    
+    .case-detail .progress-bar-demo {
+        height: 8px;
     }
     
     .case-modal-close {
