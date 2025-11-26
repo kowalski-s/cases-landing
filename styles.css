@@ -2649,9 +2649,9 @@ section {
     
     .hero-stats {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: var(--spacing-md);
-        margin-top: var(--spacing-lg);
+        flex-wrap: nowrap;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-md);
         align-items: center;
         justify-content: center;
     }
@@ -2659,13 +2659,13 @@ section {
     .stat-item {
         align-items: center;
         text-align: center;
-        flex: 1 1 auto;
-        min-width: 120px;
+        flex: 0 1 auto;
+        min-width: 0;
     }
     
     .stat-item-connection {
-        flex: 1 1 auto;
-        min-width: 140px;
+        flex: 0 1 auto;
+        min-width: 0;
         align-items: center;
     }
     
@@ -2881,8 +2881,9 @@ section {
     
     .hero-stats {
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: var(--spacing-sm);
+        flex-wrap: nowrap;
+        gap: var(--spacing-xs);
+        margin-top: var(--spacing-sm);
         align-items: center;
         justify-content: center;
     }
@@ -2890,31 +2891,31 @@ section {
     .stat-item {
         align-items: center;
         text-align: center;
-        flex: 1 1 auto;
-        min-width: 100px;
+        flex: 0 1 auto;
+        min-width: 0;
     }
     
     .stat-value {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
     .stat-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
     }
     
     .stat-item-connection {
-        flex: 1 1 auto;
-        min-width: 120px;
+        flex: 0 1 auto;
+        min-width: 0;
         align-items: center;
     }
     
     .stat-item-connection .connection-icon-wrapper {
-        height: 2rem;
-        width: 36px;
+        height: 1.75rem;
+        width: 32px;
     }
     
     .stat-item-connection .stat-label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         text-align: center;
     }
 }
