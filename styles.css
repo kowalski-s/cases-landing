@@ -1010,6 +1010,13 @@ section {
     margin-top: var(--spacing-2xl);
     border-top: 1px solid rgba(99, 102, 241, 0.2);
     text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.case-detail .case-cta {
+    position: relative;
+    z-index: 1;
 }
 
 .case-cta-btn {
