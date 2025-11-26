@@ -2710,6 +2710,11 @@ section {
         text-align: center;
     }
     
+    .stat-label-two-lines {
+        align-items: center;
+        text-align: center;
+    }
+    
     .stat-item-connection .stat-label {
         text-align: center;
         font-size: 0.875rem;
@@ -2981,6 +2986,11 @@ section {
         font-size: 0.7rem;
         text-align: center;
         line-height: 1.2;
+    }
+    
+    .stat-label-two-lines {
+        align-items: center;
+        text-align: center;
     }
     
     .stat-item-connection .connection-icon,
