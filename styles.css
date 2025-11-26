@@ -1200,7 +1200,37 @@ section {
 
 .feature-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: var(--spacing-md);
+}
+
+.feature-list li {
     color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    padding-left: var(--spacing-lg);
+    position: relative;
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.feature-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Case Modules Section */
+.case-modules {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(99, 102, 241, 0.03) 100%);
 }
 
 .feature-list li {
