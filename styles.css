@@ -2783,8 +2783,24 @@ section {
 }
 
 @media (max-width: 480px) {
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .hero-content {
+        padding-top: var(--spacing-md);
+    }
+    
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .hero-description {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        margin-bottom: var(--spacing-md);
     }
     
     .hero-visual {
@@ -2794,6 +2810,27 @@ section {
     .btn {
         padding: 0.875rem 1.5rem;
         font-size: 0.9375rem;
+    }
+    
+    .hero-stats {
+        gap: var(--spacing-sm);
+    }
+    
+    .stat-value {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8125rem;
+    }
+    
+    .stat-item-connection .connection-icon-wrapper {
+        height: 2rem;
+        width: 40px;
+    }
+    
+    .stat-item-connection .stat-label {
+        font-size: 0.8125rem;
     }
 }
 
