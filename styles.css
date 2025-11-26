@@ -3690,6 +3690,75 @@ body.light-theme {
         font-size: 0.875rem;
         padding: var(--spacing-xs) var(--spacing-sm);
     }
+    
+    .case-detail .roles {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .case-detail .roles .container {
+        padding-left: var(--spacing-sm);
+        padding-right: var(--spacing-sm);
+    }
+    
+    .case-detail .section-title {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .case-detail .section-description {
+        font-size: 0.9375rem;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .case-detail .roles-tabs {
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .case-detail .role-tab {
+        padding: var(--spacing-xs) var(--spacing-xs);
+        font-size: 0.75rem;
+    }
+    
+    .case-detail .role-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .case-detail .role-title {
+        font-size: 1.25rem;
+    }
+    
+    .case-detail .role-description {
+        font-size: 0.875rem;
+    }
+    
+    .case-detail .role-feature-item {
+        padding: var(--spacing-xs);
+        gap: var(--spacing-xs);
+    }
+    
+    .case-detail .role-feature-icon-wrapper {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .case-detail .role-feature-title {
+        font-size: 0.875rem;
+    }
+    
+    .case-detail .role-feature-description {
+        font-size: 0.75rem;
+    }
+    
+    .case-detail .screenshot-container {
+        min-height: 150px;
+    }
+    
+    .case-detail .screenshot-image {
+        max-height: 250px;
+    }
 }
 
 /* Print Styles */
