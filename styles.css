@@ -4351,6 +4351,32 @@ body.light-theme {
         padding: 4px 8px;
         font-size: 0.7rem;
     }
+    
+    .case-detail .admin-tabs {
+        gap: 4px;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .case-detail .admin-tab {
+        padding: 4px 6px;
+        font-size: 0.65rem;
+    }
+    
+    .case-detail .admin-kpi {
+        gap: var(--spacing-xs);
+    }
+    
+    .case-detail .kpi-item {
+        padding: var(--spacing-xs);
+    }
+    
+    .case-detail .kpi-value {
+        font-size: 1.5rem;
+    }
+    
+    .case-detail .kpi-label {
+        font-size: 0.65rem;
+    }
 }
 
 /* Print Styles */
