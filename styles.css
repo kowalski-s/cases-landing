@@ -4000,13 +4000,52 @@ body.light-theme {
         min-height: 0;
         max-height: none;
         box-sizing: border-box;
-        overflow: visible;
-        overflow-x: visible;
-        overflow-y: visible;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        overflow: hidden;
+        padding-left: 0;
+        padding-right: 0;
         margin-left: 0;
         margin-right: 0;
+        transform: none;
+    }
+    
+    .case-detail .browser-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-sm);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-left: 0;
+        margin-right: 0;
+        transform: none;
+    }
+    
+    .case-detail .browser-dots {
+        flex-shrink: 0;
+        display: flex;
+        gap: 4px;
+    }
+    
+    .case-detail .browser-dots span {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .case-detail .browser-url {
+        flex: 1;
+        min-width: 0;
+        max-width: 100%;
+        display: block;
+        box-sizing: border-box;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+        margin: 0;
     }
     
     .case-detail .browser-mockup {
