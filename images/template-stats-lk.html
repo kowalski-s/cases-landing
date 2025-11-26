@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон: Статистика + ЛК</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0a0f;
+            padding: 40px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            width: 100%;
+            background: #111118;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .screenshot-composition {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        
+        .screenshot-panel {
+            background: #1a1a24;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .screenshot-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+        }
+        
+        .panel-label {
+            color: #8b5cf6;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .screenshot-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            filter: 
+                brightness(0.75) 
+                contrast(1.2) 
+                saturate(0.85)
+                invert(0.1)
+                hue-rotate(5deg);
+        }
+        
+        .stats-panel .screenshot-image {
+            max-height: 700px;
+            object-fit: contain;
+        }
+        
+        .lk-panel .screenshot-image {
+            max-height: 500px;
+            object-fit: contain;
+        }
+        
+        @media (max-width: 1200px) {
+            .screenshot-composition {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screenshot-composition">
+            <div class="screenshot-panel stats-panel">
+                <div class="panel-label">Статистика ученика</div>
+                <img src="статистика ученика.png" alt="Статистика" class="screenshot-image">
+            </div>
+            
+            <div class="screenshot-panel lk-panel">
+                <div class="panel-label">Личный кабинет</div>
+                <img src="лк ученика.png" alt="Личный кабинет" class="screenshot-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

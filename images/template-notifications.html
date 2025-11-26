@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблон: Уведомления</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #0a0a0f;
+            padding: 40px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: #111118;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        .screenshot-panel {
+            background: #1a1a24;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .screenshot-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+        }
+        
+        .panel-label {
+            color: #8b5cf6;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .screenshot-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            filter: 
+                brightness(0.75) 
+                contrast(1.2) 
+                saturate(0.85)
+                invert(0.1)
+                hue-rotate(5deg);
+            max-height: 700px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screenshot-panel">
+            <div class="panel-label">Уведомления</div>
+            <!-- 
+            ВАЖНО: Если у вас есть скриншот уведомлений, замените путь ниже на правильное имя файла.
+            Если файла нет, можно временно использовать один из существующих скриншотов для проверки шаблона.
+            -->
+            <div style="background: #1a1a24; padding: 40px; border-radius: 8px; text-align: center; color: #8b5cf6;">
+                <p style="margin-bottom: 20px;">Добавьте скриншот уведомлений</p>
+                <p style="font-size: 12px; color: #666;">Замените этот блок на &lt;img src="имя_файла.png"&gt;</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
