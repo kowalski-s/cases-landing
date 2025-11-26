@@ -1352,7 +1352,7 @@ section {
 }
 
 /* Обертка для дополнительного затемнения фона */
-.screenshot-image::after {
+.screenshot-image.active::after {
     content: '';
     position: absolute;
     inset: 0;
