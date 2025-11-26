@@ -2608,21 +2608,45 @@ section {
         transform: rotate(-45deg) translate(7px, -7px);
     }
     
+    .logo-text {
+        font-size: 1.125rem;
+    }
+    
+    .hero-content {
+        padding-top: var(--spacing-lg);
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-md);
     }
     
     .hero-description {
-        font-size: 1.125rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: var(--spacing-lg);
     }
     
     .hero-cta {
         flex-direction: column;
+        gap: var(--spacing-sm);
     }
     
     .hero-stats {
         flex-direction: column;
         gap: var(--spacing-md);
+        margin-top: var(--spacing-lg);
+    }
+    
+    .stat-item-connection {
+        width: 100%;
+    }
+    
+    .stat-item-connection .stat-label {
+        text-align: left;
+        font-size: 0.875rem;
+        line-height: 1.4;
     }
     
     .section-title {
