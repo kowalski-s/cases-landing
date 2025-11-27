@@ -3405,6 +3405,16 @@ body.light-theme {
     border-top: 1px solid rgba(99, 102, 241, 0.2);
 }
 
+/* Ensure horizontal layout on desktop */
+@media (min-width: 769px) {
+    .about-stats {
+        flex-direction: row !important;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .about-stat-item {
     flex: 1;
     text-align: center;
