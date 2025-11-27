@@ -4432,16 +4432,19 @@ body.light-theme {
         gap: 64px !important;
         justify-items: center !important;
         align-items: flex-start !important;
+        width: 100% !important;
     }
     
     .about-me .about-stat-item {
         width: auto !important;
         max-width: none !important;
+        min-width: 0 !important;
         margin: 0 !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
+        flex: none !important;
     }
 }
 
