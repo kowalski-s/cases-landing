@@ -3251,7 +3251,7 @@ body.light-theme {
 
 .work-steps {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: var(--spacing-md);
