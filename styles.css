@@ -4426,16 +4426,19 @@ body.light-theme {
         flex-direction: row !important;
         justify-content: center !important;
         align-items: flex-start !important;
-        gap: 64px !important;
         flex-wrap: nowrap !important;
+        gap: 64px !important;
     }
     
     .about-me .about-stat-item {
+        width: auto !important;
+        max-width: none !important;
+        flex: 0 0 auto !important;
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        flex: 0 1 auto !important;
+        margin: 0 !important;
     }
 }
 
