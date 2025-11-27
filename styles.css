@@ -4498,26 +4498,55 @@ body.light-theme {
         width: 100% !important;
     }
     
-    /* Таб "Преподаватель": ограничить высоту мокапа */
+    /* Таб "Преподаватель": сбалансированные пропорции как у администратора */
+    .case-detail .role-content[data-role-content="teacher"] .role-split {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 48px !important;
+    }
+    
+    .case-detail .role-content[data-role-content="teacher"] .role-visual {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    
     .case-detail .role-content[data-role-content="teacher"] .role-visual .mockup-browser {
-        max-height: 370px !important;
-        aspect-ratio: 16 / 9 !important;
-        overflow: hidden !important;
+        max-width: 580px !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        aspect-ratio: unset !important;
+        overflow: visible !important;
     }
     
     .case-detail .role-content[data-role-content="teacher"] .role-visual .mockup-browser .browser-content {
-        height: 100% !important;
-        min-height: auto !important;
-        padding: var(--spacing-lg) !important;
-        display: flex !important;
-        flex-direction: column !important;
-        justify-content: space-between !important;
+        height: auto !important;
+        min-height: 280px !important;
+        padding: var(--spacing-xl) !important;
+        display: block !important;
     }
     
-    .case-detail .role-content[data-role-content="teacher"] .role-visual .chart-demo,
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .chart-demo {
+        width: 100% !important;
+        height: 120px !important;
+        margin-bottom: var(--spacing-lg) !important;
+    }
+    
     .case-detail .role-content[data-role-content="teacher"] .role-visual .stats-grid {
         width: 100% !important;
         height: auto !important;
+        gap: var(--spacing-md) !important;
+    }
+    
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .stat-box {
+        padding: var(--spacing-md) !important;
+    }
+    
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .stat-number {
+        font-size: 2.5rem !important;
+    }
+    
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .stat-label {
+        font-size: 0.875rem !important;
     }
     
     /* Таб "Администратор": увеличить шрифты и уменьшить отступы */
