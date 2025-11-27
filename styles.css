@@ -4463,3 +4463,39 @@ body.light-theme {
     }
 }
 
+/* ============================================
+   Блок "Персонализированный опыт для каждой роли"
+   DESKTOP: компактная верстка с центрированием
+   ============================================ */
+@media (min-width: 1024px) {
+    /* Модалка: отступы и max-width */
+    .case-detail {
+        max-width: 1200px !important;
+        margin: 40px auto !important;
+        padding: 32px 40px !important;
+    }
+    
+    /* Уменьшить максимальную ширину контента внутри модалки */
+    .case-detail .roles .container {
+        max-width: 1120px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Центрировать блок с текстом и мокапом (два столбца) */
+    .case-detail .role-split {
+        display: grid !important;
+        grid-template-columns: 1.1fr 1fr !important;
+        gap: 40px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        max-width: 100% !important;
+    }
+    
+    /* Столбцы: текст и мокап */
+    .case-detail .role-info,
+    .case-detail .role-visual {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
