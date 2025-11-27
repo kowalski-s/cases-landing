@@ -4497,5 +4497,50 @@ body.light-theme {
         max-width: 100% !important;
         width: 100% !important;
     }
+    
+    /* Таб "Преподаватель": ограничить высоту мокапа */
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .mockup-browser {
+        max-height: 370px !important;
+        aspect-ratio: 16 / 9 !important;
+        overflow: hidden !important;
+    }
+    
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .mockup-browser .browser-content {
+        height: 100% !important;
+        min-height: auto !important;
+        padding: var(--spacing-lg) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+    }
+    
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .chart-demo,
+    .case-detail .role-content[data-role-content="teacher"] .role-visual .stats-grid {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Таб "Администратор": увеличить шрифты и уменьшить отступы */
+    .case-detail .role-content[data-role-content="admin"] .mockup-browser .browser-content {
+        padding: var(--spacing-md) var(--spacing-lg) !important;
+    }
+    
+    .case-detail .role-content[data-role-content="admin"] .kpi-item {
+        padding: var(--spacing-sm) var(--spacing-md) !important;
+    }
+    
+    .case-detail .role-content[data-role-content="admin"] .kpi-value {
+        font-size: 2.5rem !important;
+        margin-bottom: var(--spacing-xs) !important;
+    }
+    
+    .case-detail .role-content[data-role-content="admin"] .kpi-label {
+        font-size: 1rem !important;
+    }
+    
+    .case-detail .role-content[data-role-content="admin"] .admin-tab {
+        padding: var(--spacing-xs) var(--spacing-sm) !important;
+        font-size: 0.875rem !important;
+    }
 }
 
